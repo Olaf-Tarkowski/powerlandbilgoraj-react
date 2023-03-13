@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/powerlandbilgoraj-react/static/css/main.073c9b0a.css",
+    "main.js": "/powerlandbilgoraj-react/static/js/main.49761c11.js",
+    "static/js/787.ef2d4403.chunk.js": "/powerlandbilgoraj-react/static/js/787.ef2d4403.chunk.js",
+    "static/media/logo.svg": "/powerlandbilgoraj-react/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/powerlandbilgoraj-react/index.html",
+    "main.073c9b0a.css.map": "/powerlandbilgoraj-react/static/css/main.073c9b0a.css.map",
+    "main.49761c11.js.map": "/powerlandbilgoraj-react/static/js/main.49761c11.js.map",
+    "787.ef2d4403.chunk.js.map": "/powerlandbilgoraj-react/static/js/787.ef2d4403.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.49761c11.js"
+  ]
+}
