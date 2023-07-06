@@ -11,5 +11,6 @@ html {
 
 body {
   margin: auto;
+  font-family: 'Atma', cursive;
 }
 `;
