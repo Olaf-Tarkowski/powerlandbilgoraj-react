@@ -2,16 +2,16 @@ import { Switch, Route, Redirect, HashRouter, NavLink } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../resources/images/logo.png";
 
-export const Section = styled.section``;
+const Section = styled.section``;
 
-export const Nav = styled.nav`
+const Nav = styled.nav`
   margin: auto;
   padding: 15px 35px;
   display: flex;
   align-items: center;
 `;
 
-export const StyledList = styled.ul`
+const StyledList = styled.ul`
   margin: 0px;
   padding: 0px;
   width: 100%;
@@ -23,7 +23,7 @@ export const StyledList = styled.ul`
   list-style: none;
 `;
 
-export const StyledNavLink = styled(NavLink)`
+const StyledNavLink = styled(NavLink)`
   margin: 0 15px;
   font-weight: 700;
   font-size: 15px;
@@ -32,7 +32,7 @@ export const StyledNavLink = styled(NavLink)`
   text-transform: uppercase;
 `;
 
-export const Logo = styled.img`
+const Logo = styled.img`
   height: 65px;
 `;
 
