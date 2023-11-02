@@ -3,6 +3,7 @@ import HamburgerMenu from "react-hamburger-menu";
 import { Switch, Route, Redirect, HashRouter, NavLink } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../resources/images/logo.png";
+import Home from "./Home";
 
 const Section = styled.section``;
 
@@ -52,6 +53,10 @@ const StyledNavLink = styled(NavLink)`
 
 const Logo = styled.img`
   height: 65px;
+  transition: 0.9s;
+  &:hover {
+    transform: scale(1.25);
+  };
 `;
 
 const HamburgerMenuContainer = styled.div`
@@ -66,7 +71,7 @@ const NavBar = () => {
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
-  console.log(isOpen);
+
   return (
     <HashRouter>
       <Section>
@@ -128,6 +133,7 @@ const NavBar = () => {
         <Route path="/wyporzyczalnia">home</Route>
         <Route path="/galeria">about</Route>
         <Route path="/kontakt">contact</Route>
+        <Route path="/"><Home /></Route>
         <Redirect to="/" />
       </Switch>
     </HashRouter>

@@ -16,6 +16,10 @@ const Section = styled.section`
 const Logo = styled.img`
   height: 75px;
   padding-right: 15px;
+  transition: 0.9s;
+  &:hover {
+    transform: scale(1.25);
+  };
 `;
 
 const Footer = () => {
