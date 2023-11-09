@@ -4,6 +4,7 @@ import { Switch, Route, Redirect, HashRouter, NavLink } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../resources/images/logo.png";
 import Home from "./Home";
+import Birthday from "./Birsthday";
 
 const Section = styled.section``;
 
@@ -56,7 +57,7 @@ const Logo = styled.img`
   transition: 0.9s;
   &:hover {
     transform: scale(1.25);
-  };
+  }
 `;
 
 const HamburgerMenuContainer = styled.div`
@@ -126,14 +127,18 @@ const NavBar = () => {
       <Switch>
         <Route path="/o_nas">s</Route>
         <Route path="/grupy_szkolne">a</Route>
-        <Route path="/urodziny">u</Route>
+        <Route path="/urodziny">
+          <Birthday />
+        </Route>
         <Route path="/warsztaty">home</Route>
         <Route path="/cennik">home</Route>
         <Route path="/regulamin">home</Route>
         <Route path="/wyporzyczalnia">home</Route>
         <Route path="/galeria">about</Route>
         <Route path="/kontakt">contact</Route>
-        <Route path="/"><Home /></Route>
+        <Route path="/">
+          <Home />
+        </Route>
         <Redirect to="/" />
       </Switch>
     </HashRouter>
