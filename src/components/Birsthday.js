@@ -22,11 +22,32 @@ const CardImg = styled.img`
   width: 100%;
   height: 100%;
   border-radius: 20px;
+  transition: 0.8s;
+  &:hover {
+    transform: scale(1.02);
+  }
 `;
 
-const Info = styled.div``;
+const Info = styled.div`
+  margin: 20px;
+`;
 
-const OneRowImg = styled.img``;
+const TextBox = styled.div`
+  margin: 50px 0;
+`;
+
+const Title = styled.div`
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+`;
+const InfoText = styled.div`
+  word-spacing: 4px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+`;
 
 const Birthday = () => {
   return (
@@ -46,6 +67,69 @@ const Birthday = () => {
       <Row>
         <CardRow lg={12}>
           <CardImg src={urodziny2} />
+        </CardRow>
+      </Row>
+      <Row>
+        <CardRow lg={12}>
+          <TextBox>
+            <Title>
+              ORGANIZACJA URODZIN W PARKU ZEWNĘTRZNY POWERLAND BIŁGORAJ
+            </Title>
+            <InfoText>
+              150 zł – WYNAJĘCIE MIEJSCA
+              <br />
+              40 zł / DZIECKO / 3 h POBYTU W PARKU
+              <br />
+              25 zł / RODZIC / OPIEKUN
+            </InfoText>
+          </TextBox>
+          <TextBox>
+            <Title>
+              UWAGA !
+              <br />
+              INFORMACJA !
+            </Title>
+            <InfoText>
+              Informujemy, że rodzice / opiekunowie przebywający z dziećmi na
+              organizowanym przyjęciu w Powerland,
+              <br />
+              mogą korzystać z atrakcji (samodzielnie lub wspólnie z dzieckiem)
+              tylko po uiszczeniu opłaty zgodnie z cennikiem powerland.
+            </InfoText>
+            <InfoText>
+              poczęstunek dla dzieci w zakresie Rodzica/opiekuna
+            </InfoText>
+            <InfoText>
+              kawa/herbata, pizza lub inne produkty są zamawiane w gastronomii
+              lub lokalu i na bieżąco opłacane
+            </InfoText>
+          </TextBox>
+          <TextBox>
+            <InfoText>
+              Rodzice / opiekunowie, którzy nie dokonali opłaty zgodnie z
+              cennikiem Powerland otrzymują opaskę,
+              <br />
+              która upoważnia ich jedynie do przebywania razem z dzieckiem
+              podczas zorganizowanego przyjęcia
+              <br />
+              na terenie Poweland i uniemozliwia wejście na atrakcje.
+            </InfoText>
+            <InfoText>
+              Informujemy również, iż wiek dziecka musi być odpowiedni do
+              korzystania z danej atrakcji.
+            </InfoText>
+            <InfoText>
+              UWAGA ! Nie na wszystkich atrakcjach może uczestniczyć dziecko bez
+              rodzica / opiekuna.
+            </InfoText>
+            <InfoText>
+              każda osoba przebywająca na parku powinna posiadać opaskę, osoby
+              bez opasek będą wypraszane z placówki
+            </InfoText>
+            <InfoText>
+              Za uczestników imprezy urodzinowej odpowiada organizator imprezy.
+            </InfoText>
+          </TextBox>
         </CardRow>
       </Row>
       <Row>
