@@ -22,7 +22,7 @@ const CardImg = styled.img`
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  transition: 0.8s;
+  transition: 0.5s;
   &:hover {
     transform: scale(1.02);
   }
