@@ -7,6 +7,7 @@ import Home from "./Home";
 import Birthday from "./Birsthday";
 import Gallery from "./Gallery";
 import Rent from "./Rent";
+import Workshop from "./Workshop";
 
 const Section = styled.section``;
 
@@ -132,7 +133,7 @@ const NavBar = () => {
         <Route path="/urodziny">
           <Birthday />
         </Route>
-        <Route path="/warsztaty">home</Route>
+        <Route path="/warsztaty"><Workshop /></Route>
         <Route path="/cennik">home</Route>
         <Route path="/regulamin">home</Route>
         <Route path="/wyporzyczalnia"><Rent /></Route>
