@@ -5,6 +5,7 @@ import styled from "styled-components";
 import logo from "../resources/images/logo.png";
 import Home from "./Home";
 import Birthday from "./Birsthday";
+import Gallery from "./Gallery";
 
 const Section = styled.section``;
 
@@ -134,7 +135,7 @@ const NavBar = () => {
         <Route path="/cennik">home</Route>
         <Route path="/regulamin">home</Route>
         <Route path="/wyporzyczalnia">home</Route>
-        <Route path="/galeria">about</Route>
+        <Route path="/galeria"><Gallery /></Route>
         <Route path="/kontakt">contact</Route>
         <Route path="/">
           <Home />
