@@ -8,6 +8,7 @@ import Birthday from "./Birsthday";
 import Gallery from "./Gallery";
 import Rent from "./Rent";
 import Workshop from "./Workshop";
+import SchoolGroup from "./SchoolGroup";
 
 const Section = styled.section``;
 
@@ -129,7 +130,7 @@ const NavBar = () => {
       </Section>
       <Switch>
         <Route path="/o_nas">s</Route>
-        <Route path="/grupy_szkolne">a</Route>
+        <Route path="/grupy_szkolne"><SchoolGroup /></Route>
         <Route path="/urodziny">
           <Birthday />
         </Route>
