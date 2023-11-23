@@ -9,13 +9,19 @@ import { Col, Row } from "styled-bootstrap-grid";
 
 const Main = styled.main`
   margin: auto;
+  padding: 0 0 15px;
   max-width: 1140px;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
-const CardRow = styled(Col)`
-  padding: 15px 15px;
+
+const RowCard = styled(Row)`
+  margin: 0 15px;
+`;
+
+const ColCard = styled(Col)`
+  padding: 15px;
 `;
 
 const CardImg = styled.img`
@@ -52,25 +58,25 @@ const InfoText = styled.div`
 const Birthday = () => {
   return (
     <Main>
-      <Row>
-        <CardRow lg={6}>
+      <RowCard>
+        <ColCard lg={6}>
           <CardImg src={urodziny1} />
-        </CardRow>
-        <CardRow lg={6}>
+        </ColCard>
+        <ColCard lg={6}>
           <CardImg src={urodziny3} />
-        </CardRow>
-      </Row>
+        </ColCard>
+      </RowCard>
       <Info>
         ZNAK TOWAROWY SLIME® JEST ZAREJESTROWANY NA RZECZ VIACOM INTERNATIONAL
         INC. ZAREJESTROWANY ZNAK TOWAROWY.
       </Info>
-      <Row>
-        <CardRow lg={12}>
+      <RowCard>
+        <ColCard lg={12}>
           <CardImg src={urodziny2} />
-        </CardRow>
-      </Row>
-      <Row>
-        <CardRow lg={12}>
+        </ColCard>
+      </RowCard>
+      <RowCard>
+        <ColCard lg={12}>
           <TextBox>
             <Title>
               ORGANIZACJA URODZIN W PARKU ZEWNĘTRZNY POWERLAND BIŁGORAJ
@@ -130,21 +136,21 @@ const Birthday = () => {
               Za uczestników imprezy urodzinowej odpowiada organizator imprezy.
             </InfoText>
           </TextBox>
-        </CardRow>
-      </Row>
-      <Row>
-        <CardRow lg={6}>
+        </ColCard>
+      </RowCard>
+      <RowCard>
+        <ColCard lg={6}>
           <CardImg src={urodziny6} />
-        </CardRow>
-        <CardRow lg={6}>
+        </ColCard>
+        <ColCard lg={6}>
           <CardImg src={urodziny4} />
-        </CardRow>
-      </Row>
-      <Row>
-        <CardRow lg={12}>
+        </ColCard>
+      </RowCard>
+      <RowCard>
+        <ColCard lg={12}>
           <CardImg src={urodziny5} />
-        </CardRow>
-      </Row>
+        </ColCard>
+      </RowCard>
     </Main>
   );
 };
