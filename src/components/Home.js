@@ -137,63 +137,65 @@ const Home = () => {
   const [visible, setVisible] = useState(false);
   return (
     <Main>
-      <PictureSection>
-        <Picture src={powerland_above}></Picture>
-        <Logo src={logo} />
-      </PictureSection>
-      <OpeningHoursSection>
-        Zapraszamy codziennie !
-        <Fade collapse when={visible}>
-          <StyledCard>
-            <OpeningHoursCard src={openingHours} />
-          </StyledCard>
-        </Fade>
-        <Button onClick={() => setVisible(!visible)}>
-          {visible === true ? "SCHOWAJ" : "POKAŻ"} GODZINY OTWARCIA
-        </Button>
-      </OpeningHoursSection>
-      <BirthdaySection>
-        <InfoCard>
-          <InfoPart>
-            <Title>URODZINY</Title>
-            <Text>
-              ZORGANIZUJ SWOJEMU DZIECKU NIEZAPOMNIANE URODZINY W POWERLAND !
-            </Text>
-            <Button>
-              <Link to="/urodziny">Więcej Informacji</Link>
-            </Button>
-          </InfoPart>
-          <SectionImg src={urodziny} />
-        </InfoCard>
-      </BirthdaySection>
-      <WorkshopsSection>
-        <InfoCard>
-          <SectionImg src={wnetrze} />
-          <InfoPart>
-            <Title>WARSZTATY</Title>
-            <Text>
-              ZAPISZ SWOJEGO MALUCHA NA TWÓRCZE WARSZTATY, NA KTÓRYCH NAUCZY SIĘ
-              ROBIĆ WŁASNORĘCZNIE STWORZONĄ PIZZĘ, PRZERÓŻNE DEKORACJE ORAZ
-              SLIME
-            </Text>
-            <Button>
-              <Link to="/warsztaty">Więcej Informacji</Link>
-            </Button>
-          </InfoPart>
-        </InfoCard>
-      </WorkshopsSection>
-      <RentalSection>
-        <InfoCard>
-          <InfoPart>
-            <Title>WYPOŻYCZALNIA HULAJNÓG</Title>
-            <Text>WYPOŻYCZ HULAJNOGĘ I UDAJ SIĘ NA WYCIECZKĘ !</Text>
-            <Button>
-              <Link to="/wyporzyczalnia">Więcej Informacji</Link>
-            </Button>
-          </InfoPart>
-          <SectionImg src={hulajnogi} />
-        </InfoCard>
-      </RentalSection>
+      <Fade duration={2000}>
+        <PictureSection>
+          <Picture src={powerland_above}></Picture>
+          <Logo src={logo} />
+        </PictureSection>
+        <OpeningHoursSection>
+          Zapraszamy codziennie !
+          <Fade collapse when={visible}>
+            <StyledCard>
+              <OpeningHoursCard src={openingHours} />
+            </StyledCard>
+          </Fade>
+          <Button onClick={() => setVisible(!visible)}>
+            {visible === true ? "SCHOWAJ" : "POKAŻ"} GODZINY OTWARCIA
+          </Button>
+        </OpeningHoursSection>
+        <BirthdaySection>
+          <InfoCard>
+            <InfoPart>
+              <Title>URODZINY</Title>
+              <Text>
+                ZORGANIZUJ SWOJEMU DZIECKU NIEZAPOMNIANE URODZINY W POWERLAND !
+              </Text>
+              <Button>
+                <Link to="/urodziny">Więcej Informacji</Link>
+              </Button>
+            </InfoPart>
+            <SectionImg src={urodziny} />
+          </InfoCard>
+        </BirthdaySection>
+        <WorkshopsSection>
+          <InfoCard>
+            <SectionImg src={wnetrze} />
+            <InfoPart>
+              <Title>WARSZTATY</Title>
+              <Text>
+                ZAPISZ SWOJEGO MALUCHA NA TWÓRCZE WARSZTATY, NA KTÓRYCH NAUCZY
+                SIĘ ROBIĆ WŁASNORĘCZNIE STWORZONĄ PIZZĘ, PRZERÓŻNE DEKORACJE
+                ORAZ SLIME
+              </Text>
+              <Button>
+                <Link to="/warsztaty">Więcej Informacji</Link>
+              </Button>
+            </InfoPart>
+          </InfoCard>
+        </WorkshopsSection>
+        <RentalSection>
+          <InfoCard>
+            <InfoPart>
+              <Title>WYPOŻYCZALNIA HULAJNÓG</Title>
+              <Text>WYPOŻYCZ HULAJNOGĘ I UDAJ SIĘ NA WYCIECZKĘ !</Text>
+              <Button>
+                <Link to="/wyporzyczalnia">Więcej Informacji</Link>
+              </Button>
+            </InfoPart>
+            <SectionImg src={hulajnogi} />
+          </InfoCard>
+        </RentalSection>
+      </Fade>
     </Main>
   );
 };
