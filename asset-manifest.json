@@ -1,24 +1,30 @@
 {
   "files": {
-    "main.js": "/powerlandbilgoraj-react/static/js/main.3f06f606.js",
+    "main.js": "/powerlandbilgoraj-react/static/js/main.25819e1b.js",
     "static/js/787.ef2d4403.chunk.js": "/powerlandbilgoraj-react/static/js/787.ef2d4403.chunk.js",
     "static/media/powerland_above.jpeg": "/powerlandbilgoraj-react/static/media/powerland_above.53536fe6a3b2472755ab.jpeg",
     "static/media/wnetrze.jpg": "/powerlandbilgoraj-react/static/media/wnetrze.0ebeae6f51ddd69f04ea.jpg",
     "static/media/urodziny.jpg": "/powerlandbilgoraj-react/static/media/urodziny.8688425bbfebdb8d2821.jpg",
+    "static/media/SchoolGroupCard1.jpg": "/powerlandbilgoraj-react/static/media/SchoolGroupCard1.f688fb84f6b598298e7f.jpg",
+    "static/media/SchoolGroupCard2.jpg": "/powerlandbilgoraj-react/static/media/SchoolGroupCard2.07723d23c8931a832d4e.jpg",
     "static/media/opening_hours.jpg": "/powerlandbilgoraj-react/static/media/opening_hours.a015b2a5ee41b1734f58.jpg",
     "static/media/urodziny2.png": "/powerlandbilgoraj-react/static/media/urodziny2.b74e011832733090fb3a.png",
+    "static/media/SchoolGroupCard4.jpg": "/powerlandbilgoraj-react/static/media/SchoolGroupCard4.2040c2c27c24e3c72a86.jpg",
     "static/media/urodziny6.jpg": "/powerlandbilgoraj-react/static/media/urodziny6.71c080732b755e3ab335.jpg",
+    "static/media/SchoolGroupCard6.jpg": "/powerlandbilgoraj-react/static/media/SchoolGroupCard6.9a8144b770d4058d39ee.jpg",
     "static/media/urodziny4.jpg": "/powerlandbilgoraj-react/static/media/urodziny4.5252d6e0e9e2b00d83ec.jpg",
     "static/media/urodziny3.png": "/powerlandbilgoraj-react/static/media/urodziny3.2d197ddf8c45914ac8ca.png",
+    "static/media/SchoolGroupCard3.jpg": "/powerlandbilgoraj-react/static/media/SchoolGroupCard3.36f4771bf7fc91d83eb2.jpg",
     "static/media/urodziny1.png": "/powerlandbilgoraj-react/static/media/urodziny1.59ffb5f4c2395ac8a6dd.png",
+    "static/media/SchoolGroupCard5.jpg": "/powerlandbilgoraj-react/static/media/SchoolGroupCard5.6dc8ecb063650b53f7c2.jpg",
     "static/media/urodziny5.jpg": "/powerlandbilgoraj-react/static/media/urodziny5.6877aa2f2453fa6f8a05.jpg",
     "static/media/hulajnogi.jpg": "/powerlandbilgoraj-react/static/media/hulajnogi.2e907599a5a91358c1b9.jpg",
     "static/media/logo.png": "/powerlandbilgoraj-react/static/media/logo.11dca39bfcc6f2b1ff81.png",
     "index.html": "/powerlandbilgoraj-react/index.html",
-    "main.3f06f606.js.map": "/powerlandbilgoraj-react/static/js/main.3f06f606.js.map",
+    "main.25819e1b.js.map": "/powerlandbilgoraj-react/static/js/main.25819e1b.js.map",
     "787.ef2d4403.chunk.js.map": "/powerlandbilgoraj-react/static/js/787.ef2d4403.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.3f06f606.js"
+    "static/js/main.25819e1b.js"
   ]
 }
