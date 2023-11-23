@@ -6,6 +6,22 @@ import urodziny4 from "../resources/images/urodziny4.jpg";
 import urodziny5 from "../resources/images/urodziny5.jpg";
 import urodziny6 from "../resources/images/urodziny6.jpg";
 import { Col, Row } from "styled-bootstrap-grid";
+import Fade from "react-reveal/Fade";
+
+const TitleText = styled.div`
+  margin: auto;
+  padding: 0 30px;
+  font-size: 40px;
+  max-width: 1140px;
+  text-transform: uppercase;
+`;
+
+const Line = styled.div`
+  width: 100%;
+  height: 2px;
+  margin-bottom: 15px;
+  background: #cc2e72;
+`;
 
 const Main = styled.main`
   margin: auto;
@@ -57,101 +73,113 @@ const InfoText = styled.div`
 
 const Birthday = () => {
   return (
-    <Main>
-      <RowCard>
-        <ColCard lg={6}>
-          <CardImg src={urodziny1} />
-        </ColCard>
-        <ColCard lg={6}>
-          <CardImg src={urodziny3} />
-        </ColCard>
-      </RowCard>
-      <Info>
-        ZNAK TOWAROWY SLIME® JEST ZAREJESTROWANY NA RZECZ VIACOM INTERNATIONAL
-        INC. ZAREJESTROWANY ZNAK TOWAROWY.
-      </Info>
-      <RowCard>
-        <ColCard lg={12}>
-          <CardImg src={urodziny2} />
-        </ColCard>
-      </RowCard>
-      <RowCard>
-        <ColCard lg={12}>
-          <TextBox>
-            <Title>
-              ORGANIZACJA URODZIN W PARKU ZEWNĘTRZNY POWERLAND BIŁGORAJ
-            </Title>
-            <InfoText>
-              150 zł – WYNAJĘCIE MIEJSCA
-              <br />
-              40 zł / DZIECKO / 3 h POBYTU W PARKU
-              <br />
-              25 zł / RODZIC / OPIEKUN
-            </InfoText>
-          </TextBox>
-          <TextBox>
-            <Title>
-              UWAGA !
-              <br />
-              INFORMACJA !
-            </Title>
-            <InfoText>
-              Informujemy, że rodzice / opiekunowie przebywający z dziećmi na
-              organizowanym przyjęciu w Powerland,
-              <br />
-              mogą korzystać z atrakcji (samodzielnie lub wspólnie z dzieckiem)
-              tylko po uiszczeniu opłaty zgodnie z cennikiem powerland.
-            </InfoText>
-            <InfoText>
-              poczęstunek dla dzieci w zakresie Rodzica/opiekuna
-            </InfoText>
-            <InfoText>
-              kawa/herbata, pizza lub inne produkty są zamawiane w gastronomii
-              lub lokalu i na bieżąco opłacane
-            </InfoText>
-          </TextBox>
-          <TextBox>
-            <InfoText>
-              Rodzice / opiekunowie, którzy nie dokonali opłaty zgodnie z
-              cennikiem Powerland otrzymują opaskę,
-              <br />
-              która upoważnia ich jedynie do przebywania razem z dzieckiem
-              podczas zorganizowanego przyjęcia
-              <br />
-              na terenie Poweland i uniemozliwia wejście na atrakcje.
-            </InfoText>
-            <InfoText>
-              Informujemy również, iż wiek dziecka musi być odpowiedni do
-              korzystania z danej atrakcji.
-            </InfoText>
-            <InfoText>
-              UWAGA ! Nie na wszystkich atrakcjach może uczestniczyć dziecko bez
-              rodzica / opiekuna.
-            </InfoText>
-            <InfoText>
-              każda osoba przebywająca na parku powinna posiadać opaskę, osoby
-              bez opasek będą wypraszane z placówki
-            </InfoText>
-            <InfoText>
-              Za uczestników imprezy urodzinowej odpowiada organizator imprezy.
-            </InfoText>
-          </TextBox>
-        </ColCard>
-      </RowCard>
-      <RowCard>
-        <ColCard lg={6}>
-          <CardImg src={urodziny6} />
-        </ColCard>
-        <ColCard lg={6}>
-          <CardImg src={urodziny4} />
-        </ColCard>
-      </RowCard>
-      <RowCard>
-        <ColCard lg={12}>
-          <CardImg src={urodziny5} />
-        </ColCard>
-      </RowCard>
-    </Main>
+    <>
+      <Fade right duration={2000}>
+        <TitleText>Urodziny</TitleText>
+      </Fade>
+      <Fade left duration={2000}>
+        <Line />
+      </Fade>
+      <Main>
+        <Fade duration={2000}>
+          <RowCard>
+            <ColCard lg={6}>
+              <CardImg src={urodziny1} />
+            </ColCard>
+            <ColCard lg={6}>
+              <CardImg src={urodziny3} />
+            </ColCard>
+          </RowCard>
+          <Info>
+            ZNAK TOWAROWY SLIME® JEST ZAREJESTROWANY NA RZECZ VIACOM
+            INTERNATIONAL INC. ZAREJESTROWANY ZNAK TOWAROWY.
+          </Info>
+          <RowCard>
+            <ColCard lg={12}>
+              <CardImg src={urodziny2} />
+            </ColCard>
+          </RowCard>
+          <RowCard>
+            <ColCard lg={12}>
+              <TextBox>
+                <Title>
+                  ORGANIZACJA URODZIN W PARKU ZEWNĘTRZNY POWERLAND BIŁGORAJ
+                </Title>
+                <InfoText>
+                  150 zł – WYNAJĘCIE MIEJSCA
+                  <br />
+                  40 zł / DZIECKO / 3 h POBYTU W PARKU
+                  <br />
+                  25 zł / RODZIC / OPIEKUN
+                </InfoText>
+              </TextBox>
+              <TextBox>
+                <Title>
+                  UWAGA !
+                  <br />
+                  INFORMACJA !
+                </Title>
+                <InfoText>
+                  Informujemy, że rodzice / opiekunowie przebywający z dziećmi
+                  na organizowanym przyjęciu w Powerland,
+                  <br />
+                  mogą korzystać z atrakcji (samodzielnie lub wspólnie z
+                  dzieckiem) tylko po uiszczeniu opłaty zgodnie z cennikiem
+                  powerland.
+                </InfoText>
+                <InfoText>
+                  poczęstunek dla dzieci w zakresie Rodzica/opiekuna
+                </InfoText>
+                <InfoText>
+                  kawa/herbata, pizza lub inne produkty są zamawiane w
+                  gastronomii lub lokalu i na bieżąco opłacane
+                </InfoText>
+              </TextBox>
+              <TextBox>
+                <InfoText>
+                  Rodzice / opiekunowie, którzy nie dokonali opłaty zgodnie z
+                  cennikiem Powerland otrzymują opaskę,
+                  <br />
+                  która upoważnia ich jedynie do przebywania razem z dzieckiem
+                  podczas zorganizowanego przyjęcia
+                  <br />
+                  na terenie Poweland i uniemozliwia wejście na atrakcje.
+                </InfoText>
+                <InfoText>
+                  Informujemy również, iż wiek dziecka musi być odpowiedni do
+                  korzystania z danej atrakcji.
+                </InfoText>
+                <InfoText>
+                  UWAGA ! Nie na wszystkich atrakcjach może uczestniczyć dziecko
+                  bez rodzica / opiekuna.
+                </InfoText>
+                <InfoText>
+                  każda osoba przebywająca na parku powinna posiadać opaskę,
+                  osoby bez opasek będą wypraszane z placówki
+                </InfoText>
+                <InfoText>
+                  Za uczestników imprezy urodzinowej odpowiada organizator
+                  imprezy.
+                </InfoText>
+              </TextBox>
+            </ColCard>
+          </RowCard>
+          <RowCard>
+            <ColCard lg={6}>
+              <CardImg src={urodziny6} />
+            </ColCard>
+            <ColCard lg={6}>
+              <CardImg src={urodziny4} />
+            </ColCard>
+          </RowCard>
+          <RowCard>
+            <ColCard lg={12}>
+              <CardImg src={urodziny5} />
+            </ColCard>
+          </RowCard>
+        </Fade>
+      </Main>
+    </>
   );
 };
 
