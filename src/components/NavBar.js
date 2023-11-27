@@ -9,6 +9,7 @@ import Gallery from "./Gallery";
 import Rent from "./Rent";
 import Workshop from "./Workshop";
 import SchoolGroup from "./SchoolGroup";
+import ColorfulText from "./ColorfulText";
 
 const Section = styled.section``;
 
@@ -86,31 +87,31 @@ const NavBar = () => {
           </StyledNavLink>
           <StyledList isOpen={isOpen}>
             <li>
-              <StyledNavLink to="/o_nas">O Nas</StyledNavLink>
+              <StyledNavLink to="/o_nas"><ColorfulText text="O Nas"/></StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/grupy_szkolne">Grupy Szkolne</StyledNavLink>
+              <StyledNavLink to="/grupy_szkolne"><ColorfulText text="Grupy Szkolne"/></StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/urodziny">Urodziny</StyledNavLink>
+              <StyledNavLink to="/urodziny"><ColorfulText text="Urodziny"/></StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/warsztaty">Warsztaty</StyledNavLink>
+              <StyledNavLink to="/warsztaty"><ColorfulText text="Warsztaty"/></StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/cennik">Cennik</StyledNavLink>
+              <StyledNavLink to="/cennik"><ColorfulText text="Cennik"/></StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/regulamin">Regulamin</StyledNavLink>
+              <StyledNavLink to="/regulamin"><ColorfulText text="Regulamin"/></StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/wyporzyczalnia">Wyporzyczalnia</StyledNavLink>
+              <StyledNavLink to="/wyporzyczalnia"><ColorfulText text="Wyporzyczalnia"/></StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/galeria">Galeria</StyledNavLink>
+              <StyledNavLink to="/galeria"><ColorfulText text="Galeria"/></StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/kontakt">Kontakt</StyledNavLink>
+              <StyledNavLink to="/kontakt"><ColorfulText text="Kontakt"/></StyledNavLink>
             </li>
           </StyledList>
           <HamburgerMenuContainer>
