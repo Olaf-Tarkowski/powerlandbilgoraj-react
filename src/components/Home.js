@@ -9,9 +9,11 @@ import { useState } from "react";
 import Fade from "react-reveal/Fade";
 import { NavLink } from "react-router-dom";
 import breakpoints from "../styles/breakpoints";
+import ColorfulText from "./ColorfulText";
 
 const Main = styled.main`
   text-align: center;
+  word-spacing: 4px;
 `;
 
 const PictureSection = styled.section`
@@ -144,6 +146,11 @@ const Link = styled(NavLink)`
   text-transform: uppercase;
   color: #fff;
 `;
+const FontBorder = styled.div`
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+`;
 
 const Home = () => {
   const [visible, setVisible] = useState(false);
@@ -155,7 +162,9 @@ const Home = () => {
           <Logo src={logo} />
         </PictureSection>
         <OpeningHoursSection>
-          Zapraszamy codziennie !
+          <FontBorder>
+            <ColorfulText text="Zapraszamy codziennie !" />
+          </FontBorder>
           <Fade collapse when={visible}>
             <StyledCard>
               <OpeningHoursCard src={openingHours} />
@@ -168,7 +177,11 @@ const Home = () => {
         <BirthdaySection>
           <InfoCard>
             <InfoPart>
-              <Title>URODZINY</Title>
+              <Title>
+                <FontBorder>
+                  <ColorfulText text="URODZINY" />
+                </FontBorder>
+              </Title>
               <Text>
                 ZORGANIZUJ SWOJEMU DZIECKU NIEZAPOMNIANE URODZINY W POWERLAND !
               </Text>
@@ -183,7 +196,11 @@ const Home = () => {
           <InfoCard>
             <SectionImg src={wnetrze} />
             <InfoPart>
-              <Title>WARSZTATY</Title>
+              <Title>
+                <FontBorder>
+                  <ColorfulText text="WARSZTATY" />
+                </FontBorder>
+              </Title>
               <Text>
                 ZAPISZ SWOJEGO MALUCHA NA TWÓRCZE WARSZTATY, NA KTÓRYCH NAUCZY
                 SIĘ ROBIĆ WŁASNORĘCZNIE STWORZONĄ PIZZĘ, PRZERÓŻNE DEKORACJE
@@ -198,7 +215,11 @@ const Home = () => {
         <RentalSection>
           <InfoCard>
             <InfoPart>
-              <Title>WYPOŻYCZALNIA HULAJNÓG</Title>
+              <Title>
+                <FontBorder>
+                  <ColorfulText text="WYPOŻYCZALNIA HULAJNÓG" />
+                </FontBorder>
+              </Title>
               <Text>WYPOŻYCZ HULAJNOGĘ I UDAJ SIĘ NA WYCIECZKĘ !</Text>
               <Button>
                 <Link to="/wyporzyczalnia">Więcej Informacji</Link>
