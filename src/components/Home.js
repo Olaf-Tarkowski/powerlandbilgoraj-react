@@ -8,6 +8,7 @@ import hulajnogi from "../resources/images/hulajnogi.jpg";
 import { useState } from "react";
 import Fade from "react-reveal/Fade";
 import { NavLink } from "react-router-dom";
+import breakpoints from "../styles/breakpoints";
 
 const Main = styled.main``;
 
@@ -18,7 +19,8 @@ const PictureSection = styled.section`
 `;
 
 const OpeningHoursSection = styled.section`
-  padding: 20px 0;
+  text-align: center;
+  padding: 20px 20px;
   color: #cc2e72;
   font-size: 40px;
   display: flex;
@@ -29,7 +31,7 @@ const OpeningHoursSection = styled.section`
 `;
 
 const BirthdaySection = styled.section`
-  padding: 20px 0;
+  padding: 20px 20px;
   background-color: rgba(241, 243, 245, 0.5);
   display: flex;
   flex-direction: column;
@@ -38,7 +40,7 @@ const BirthdaySection = styled.section`
 `;
 
 const WorkshopsSection = styled.section`
-  padding: 20px 0;
+  padding: 20px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,7 +48,7 @@ const WorkshopsSection = styled.section`
 `;
 
 const RentalSection = styled.section`
-  padding: 20px 0;
+  padding: 20px 20px;
   background-color: rgba(241, 243, 245, 0.5);
   display: flex;
   flex-direction: column;
@@ -55,17 +57,21 @@ const RentalSection = styled.section`
 `;
 
 const Picture = styled.img`
-  max-width: 100%;
+  object-fit: cover;
+  height: 600px;
+  width: 100%;
   background-position: center;
 `;
 
 const Logo = styled.img`
   position: absolute;
-  margin-bottom: 50px;
-  max-height: 200px;
+  max-height: 150px;
   transition: 0.9s;
   &:hover {
     transform: scale(1.25);
+  }
+  @media (min-width: ${breakpoints.lg}) {
+    max-height: 200px;
   }
 `;
 
@@ -94,14 +100,19 @@ const StyledCard = styled.div`
 
 const OpeningHoursCard = styled.img`
   height: auto;
-  max-width: 50%;
+  max-width: 1140px;
+  width: 100%;
 `;
 
 const InfoCard = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1fr;
+  gap: 20px;
   align-items: center;
+  @media (min-width: ${breakpoints.lg}) {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
 `;
 
 const InfoPart = styled.div`
@@ -113,8 +124,8 @@ const InfoPart = styled.div`
 
 const Title = styled.div`
   color: #cc2e72;
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 35px;
+  font-weight: 400;
 `;
 
 const Text = styled.div`
@@ -124,6 +135,7 @@ const Text = styled.div`
 
 const SectionImg = styled.img`
   max-width: 480px;
+  width: 100%;
   border-radius: 20px;
 `;
 
