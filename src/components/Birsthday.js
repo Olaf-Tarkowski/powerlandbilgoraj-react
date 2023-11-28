@@ -7,6 +7,7 @@ import urodziny5 from "../resources/images/urodziny5.jpg";
 import urodziny6 from "../resources/images/urodziny6.jpg";
 import { Col, Row } from "styled-bootstrap-grid";
 import Fade from "react-reveal/Fade";
+import ColorfulText from "./ColorfulText";
 
 const TitleText = styled.div`
   margin: auto;
@@ -14,6 +15,9 @@ const TitleText = styled.div`
   font-size: 40px;
   max-width: 1140px;
   text-transform: uppercase;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  letter-spacing: 1px;
+  word-spacing: 4px;
 `;
 
 const Line = styled.div`
@@ -76,7 +80,9 @@ const Birthday = () => {
   return (
     <>
       <Fade right duration={2000}>
-        <TitleText>Urodziny</TitleText>
+        <TitleText>
+          <ColorfulText text="Urodziny" />
+        </TitleText>
       </Fade>
       <Fade left duration={2000}>
         <Line />
