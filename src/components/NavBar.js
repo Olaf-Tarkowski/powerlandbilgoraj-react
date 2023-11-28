@@ -31,8 +31,9 @@ const StyledList = styled.ul`
   align-items: center;
   justify-content: flex-end;
   list-style: none;
+  gap: 30px;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1400px) {
     flex-direction: column;
     justify-content: flex-start;
     gap: 10px;
@@ -51,10 +52,20 @@ const StyledList = styled.ul`
 const StyledNavLink = styled(NavLink)`
   margin: 0 15px;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
+`;
+
+const Text = styled.div`
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  transition: 0.5s;
+  &:hover {
+    transform: scale(1.25);
+  }
 `;
 
 const Logo = styled.img`
@@ -66,7 +77,7 @@ const Logo = styled.img`
 `;
 
 const HamburgerMenuContainer = styled.div`
-  @media (min-width: 1200px) {
+  @media (min-width: 1400px) {
     display: none;
   }
 `;
@@ -87,31 +98,67 @@ const NavBar = () => {
           </StyledNavLink>
           <StyledList isOpen={isOpen}>
             <li>
-              <StyledNavLink to="/o_nas"><ColorfulText text="O Nas"/></StyledNavLink>
+              <StyledNavLink to="/o_nas">
+                <Text>
+                  <ColorfulText text="O Nas" />
+                </Text>
+              </StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/grupy_szkolne"><ColorfulText text="Grupy Szkolne"/></StyledNavLink>
+              <StyledNavLink to="/grupy_szkolne">
+                <Text>
+                  <ColorfulText text="Grupy Szkolne" />
+                </Text>
+              </StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/urodziny"><ColorfulText text="Urodziny"/></StyledNavLink>
+              <StyledNavLink to="/urodziny">
+                <Text>
+                  <ColorfulText text="Urodziny" />
+                </Text>
+              </StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/warsztaty"><ColorfulText text="Warsztaty"/></StyledNavLink>
+              <StyledNavLink to="/warsztaty">
+                <Text>
+                  <ColorfulText text="Warsztaty" />
+                </Text>
+              </StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/cennik"><ColorfulText text="Cennik"/></StyledNavLink>
+              <StyledNavLink to="/cennik">
+                <Text>
+                  <ColorfulText text="Cennik" />
+                </Text>
+              </StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/regulamin"><ColorfulText text="Regulamin"/></StyledNavLink>
+              <StyledNavLink to="/regulamin">
+                <Text>
+                  <ColorfulText text="Regulamin" />
+                </Text>
+              </StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/wyporzyczalnia"><ColorfulText text="Wyporzyczalnia"/></StyledNavLink>
+              <StyledNavLink to="/wyporzyczalnia">
+                <Text>
+                  <ColorfulText text="Wyporzyczalnia" />
+                </Text>
+              </StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/galeria"><ColorfulText text="Galeria"/></StyledNavLink>
+              <StyledNavLink to="/galeria">
+                <Text>
+                  <ColorfulText text="Galeria" />
+                </Text>
+              </StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/kontakt"><ColorfulText text="Kontakt"/></StyledNavLink>
+              <StyledNavLink to="/kontakt">
+                <Text>
+                  <ColorfulText text="Kontakt" />
+                </Text>
+              </StyledNavLink>
             </li>
           </StyledList>
           <HamburgerMenuContainer>
@@ -131,15 +178,23 @@ const NavBar = () => {
       </Section>
       <Switch>
         <Route path="/o_nas">s</Route>
-        <Route path="/grupy_szkolne"><SchoolGroup /></Route>
+        <Route path="/grupy_szkolne">
+          <SchoolGroup />
+        </Route>
         <Route path="/urodziny">
           <Birthday />
         </Route>
-        <Route path="/warsztaty"><Workshop /></Route>
+        <Route path="/warsztaty">
+          <Workshop />
+        </Route>
         <Route path="/cennik">home</Route>
         <Route path="/regulamin">home</Route>
-        <Route path="/wyporzyczalnia"><Rent /></Route>
-        <Route path="/galeria"><Gallery /></Route>
+        <Route path="/wyporzyczalnia">
+          <Rent />
+        </Route>
+        <Route path="/galeria">
+          <Gallery />
+        </Route>
         <Route path="/kontakt">contact</Route>
         <Route path="/">
           <Home />
