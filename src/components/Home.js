@@ -10,7 +10,9 @@ import Fade from "react-reveal/Fade";
 import { NavLink } from "react-router-dom";
 import breakpoints from "../styles/breakpoints";
 
-const Main = styled.main``;
+const Main = styled.main`
+  text-align: center;
+`;
 
 const PictureSection = styled.section`
   display: flex;
@@ -19,7 +21,6 @@ const PictureSection = styled.section`
 `;
 
 const OpeningHoursSection = styled.section`
-  text-align: center;
   padding: 20px 20px;
   color: #cc2e72;
   font-size: 40px;
@@ -129,7 +130,6 @@ const Title = styled.div`
 `;
 
 const Text = styled.div`
-  text-align: center;
   padding: 20px 0;
 `;
 
