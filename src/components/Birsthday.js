@@ -33,11 +33,11 @@ const Main = styled.main`
 `;
 
 const RowCard = styled(Row)`
-  margin: 0 15px;
+  margin: 0 10px;
 `;
 
 const ColCard = styled(Col)`
-  padding: 15px;
+  padding: 10px;
 `;
 
 const CardImg = styled.img`
@@ -52,6 +52,7 @@ const CardImg = styled.img`
 
 const Info = styled.div`
   margin: 20px;
+  text-align: center;
 `;
 
 const TextBox = styled.div`
