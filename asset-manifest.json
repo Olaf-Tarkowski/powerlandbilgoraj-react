@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/powerlandbilgoraj-react/static/js/main.25819e1b.js",
+    "main.js": "/powerlandbilgoraj-react/static/js/main.688ede5c.js",
     "static/js/787.ef2d4403.chunk.js": "/powerlandbilgoraj-react/static/js/787.ef2d4403.chunk.js",
     "static/media/powerland_above.jpeg": "/powerlandbilgoraj-react/static/media/powerland_above.53536fe6a3b2472755ab.jpeg",
     "static/media/wnetrze.jpg": "/powerlandbilgoraj-react/static/media/wnetrze.0ebeae6f51ddd69f04ea.jpg",
@@ -21,10 +21,10 @@
     "static/media/hulajnogi.jpg": "/powerlandbilgoraj-react/static/media/hulajnogi.2e907599a5a91358c1b9.jpg",
     "static/media/logo.png": "/powerlandbilgoraj-react/static/media/logo.11dca39bfcc6f2b1ff81.png",
     "index.html": "/powerlandbilgoraj-react/index.html",
-    "main.25819e1b.js.map": "/powerlandbilgoraj-react/static/js/main.25819e1b.js.map",
+    "main.688ede5c.js.map": "/powerlandbilgoraj-react/static/js/main.688ede5c.js.map",
     "787.ef2d4403.chunk.js.map": "/powerlandbilgoraj-react/static/js/787.ef2d4403.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.25819e1b.js"
+    "static/js/main.688ede5c.js"
   ]
 }
