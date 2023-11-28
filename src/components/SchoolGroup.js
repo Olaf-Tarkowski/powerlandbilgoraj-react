@@ -7,6 +7,7 @@ import CardImg4 from "../resources/images/SchoolGroupeImages/SchoolGroupCard4.jp
 import CardImg5 from "../resources/images/SchoolGroupeImages/SchoolGroupCard5.jpg";
 import CardImg6 from "../resources/images/SchoolGroupeImages/SchoolGroupCard6.jpg";
 import { Fade } from "react-reveal";
+import ColorfulText from "./ColorfulText";
 
 const TitleText = styled.div`
   margin: auto;
@@ -14,6 +15,9 @@ const TitleText = styled.div`
   font-size: 40px;
   max-width: 1140px;
   text-transform: uppercase;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  letter-spacing: 1px;
+  word-spacing: 4px;
 `;
 
 const Line = styled.div`
@@ -34,7 +38,6 @@ const RowCard = styled(Row)`
 `;
 
 const CardImg = styled.img`
-  /* margin:30px; */
   width: 100%;
   height: 100%;
   border-radius: 20px;
@@ -52,7 +55,9 @@ const SchoolGroup = () => {
   return (
     <>
       <Fade right duration={2000}>
-        <TitleText>Grupy Szkolne</TitleText>
+        <TitleText>
+          <ColorfulText text="Grupy Szkolne" />
+        </TitleText>
       </Fade>
       <Fade left duration={2000}>
         <Line />
