@@ -1,18 +1,31 @@
-import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
+import React, { useState, useEffect } from "react";
 
 const ColorfulText = ({ text }) => {
+  const initialColors = [
+    "rgb(239, 124, 0)",
+    "rgb(174, 203, 6)", //nie wiem czy brac czy nie
+    "rgb(0, 137, 209)",
+    "rgb(226, 0, 14)",
+    "rgb(229, 0, 124)",
+    "rgb(0, 149, 62)",
+    "rgb(255, 237, 0)",
+  ];
+
   const [coloredText, setColoredText] = useState([]);
+  const [colors] = useState(initialColors);
 
   useEffect(() => {
-    const generateRandomColor = () => Math.floor(Math.random() * 200);
+    const getRandomColor = () => {
+      const randomIndex = Math.floor(Math.random() * colors.length);
+      return colors[randomIndex];
+    };
 
     const getColorStyle = () => ({
-      color: `rgb(${generateRandomColor()}, ${generateRandomColor()}, ${generateRandomColor()})`,
+      color: getRandomColor(),
     });
 
     const transformTextToSpans = () => {
-      const characters = text.split('');
+      const characters = text.split("");
       const coloredCharacters = characters.map((char, index) => (
         <span key={index} style={getColorStyle()}>
           {char}
@@ -22,16 +35,9 @@ const ColorfulText = ({ text }) => {
     };
 
     transformTextToSpans();
-  }, [text]);
+  }, [text, colors]);
 
-  const Container = styled.div`
-  padding: 0 20px;
-  transition: 0.5s;
-  &:hover {
-    transform: scale(1.25);
-  }
-  `;
-  return <Container>{coloredText}</Container>;
+  return <div>{coloredText}</div>;
 };
 
 export default ColorfulText;
