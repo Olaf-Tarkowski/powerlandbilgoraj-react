@@ -11,7 +11,7 @@ import ColorfulText from "./ColorfulText";
 
 const TitleText = styled.div`
   margin: auto;
-  padding: 0 30px;
+  padding: 0 20px;
   font-size: 40px;
   max-width: 1140px;
   text-transform: uppercase;
@@ -34,7 +34,7 @@ const Container = styled.div`
 `;
 
 const RowCard = styled(Row)`
-  margin: 0 15px;
+  margin: 0 10px;
 `;
 
 const CardImg = styled.img`
@@ -48,7 +48,7 @@ const CardImg = styled.img`
 `;
 
 const ColCard = styled(Col)`
-  padding: 15px;
+  padding: 10px;
 `;
 
 const SchoolGroup = () => {

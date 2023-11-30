@@ -11,7 +11,7 @@ import ColorfulText from "./ColorfulText";
 
 const TitleText = styled.div`
   margin: auto;
-  padding: 0 30px;
+  padding: 0 20px;
   font-size: 40px;
   max-width: 1140px;
   text-transform: uppercase;
