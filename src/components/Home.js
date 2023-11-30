@@ -118,11 +118,27 @@ const InfoCard = styled.div`
   }
 `;
 
+const InfoCardReverse = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  gap: 20px;
+  align-items: center;
+  @media (min-width: ${breakpoints.lg}) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+`;
+
 const InfoPart = styled.div`
-  max-width: 480px;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (min-width: ${breakpoints.lg}) {
+    max-width: 480px;
+  }
 `;
 
 const Title = styled.div`
@@ -136,9 +152,12 @@ const Text = styled.div`
 `;
 
 const SectionImg = styled.img`
-  max-width: 480px;
+  max-width: 600px;
   width: 100%;
   border-radius: 20px;
+  @media (min-width: ${breakpoints.lg}) {
+    max-width: 480px;
+  }
 `;
 
 const Link = styled(NavLink)`
@@ -193,7 +212,7 @@ const Home = () => {
           </InfoCard>
         </BirthdaySection>
         <WorkshopsSection>
-          <InfoCard>
+          <InfoCardReverse>
             <SectionImg src={wnetrze} />
             <InfoPart>
               <Title>
@@ -210,7 +229,7 @@ const Home = () => {
                 <Link to="/warsztaty">Więcej Informacji</Link>
               </Button>
             </InfoPart>
-          </InfoCard>
+          </InfoCardReverse>
         </WorkshopsSection>
         <RentalSection>
           <InfoCard>
