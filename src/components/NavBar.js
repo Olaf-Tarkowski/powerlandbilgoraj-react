@@ -10,6 +10,7 @@ import Rent from "./Rent";
 import Workshop from "./Workshop";
 import SchoolGroup from "./SchoolGroup";
 import ColorfulText from "./ColorfulText";
+import AboutUs from "./AboutUs";
 
 const Section = styled.section``;
 
@@ -177,7 +178,9 @@ const NavBar = () => {
         </Nav>
       </Section>
       <Switch>
-        <Route path="/o_nas">s</Route>
+        <Route path="/o_nas">
+          <AboutUs />
+        </Route>
         <Route path="/grupy_szkolne">
           <SchoolGroup />
         </Route>
