@@ -71,16 +71,12 @@ const SchoolGroup = () => {
             <ColCard lg={6}>
               <CardImg src={CardImg2} />
             </ColCard>
-          </RowCard>
-          <RowCard>
             <ColCard lg={6}>
               <CardImg src={CardImg3} />
             </ColCard>
             <ColCard lg={6}>
               <CardImg src={CardImg4} />
             </ColCard>
-          </RowCard>
-          <RowCard>
             <ColCard lg={6}>
               <CardImg src={CardImg5} />
             </ColCard>
