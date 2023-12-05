@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import urodziny1 from "../resources/images/urodziny1.png";
-import urodziny2 from "../resources/images/urodziny2.png";
-import urodziny3 from "../resources/images/urodziny3.png";
-import urodziny4 from "../resources/images/urodziny4.jpg";
-import urodziny5 from "../resources/images/urodziny5.jpg";
-import urodziny6 from "../resources/images/urodziny6.jpg";
+import birthday1 from "../resources/images/Birthday/birthday1.png";
+import birthday2 from "../resources/images/Birthday/birthday2.png";
+import birthday3 from "../resources/images/Birthday/birthday3.png";
+import birthday4 from "../resources/images/Birthday/birthday4.jpg";
+import birthday5 from "../resources/images/Birthday/birthday5.jpg";
+import birthday6 from "../resources/images/Birthday/birthday6.jpg";
 import { Col, Row } from "styled-bootstrap-grid";
 import Fade from "react-reveal/Fade";
 import ColorfulText from "./ColorfulText";
@@ -81,7 +81,7 @@ const Birthday = () => {
     <>
       <Fade right duration={2000}>
         <TitleText>
-          <ColorfulText text="Urodziny" />
+          <ColorfulText text="birthday" />
         </TitleText>
       </Fade>
       <Fade left duration={2000}>
@@ -91,10 +91,10 @@ const Birthday = () => {
         <Fade duration={2000}>
           <RowCard>
             <ColCard lg={6}>
-              <CardImg src={urodziny1} />
+              <CardImg src={birthday1} />
             </ColCard>
             <ColCard lg={6}>
-              <CardImg src={urodziny3} />
+              <CardImg src={birthday3} />
             </ColCard>
           </RowCard>
           <Info>
@@ -103,7 +103,7 @@ const Birthday = () => {
           </Info>
           <RowCard>
             <ColCard lg={12}>
-              <CardImg src={urodziny2} />
+              <CardImg src={birthday2} />
             </ColCard>
           </RowCard>
           <RowCard>
@@ -173,15 +173,15 @@ const Birthday = () => {
           </RowCard>
           <RowCard>
             <ColCard lg={6}>
-              <CardImg src={urodziny6} />
+              <CardImg src={birthday6} />
             </ColCard>
             <ColCard lg={6}>
-              <CardImg src={urodziny4} />
+              <CardImg src={birthday4} />
             </ColCard>
           </RowCard>
           <RowCard>
             <ColCard lg={12}>
-              <CardImg src={urodziny5} />
+              <CardImg src={birthday5} />
             </ColCard>
           </RowCard>
         </Fade>
