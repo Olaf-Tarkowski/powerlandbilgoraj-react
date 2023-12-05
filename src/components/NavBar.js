@@ -11,6 +11,7 @@ import Workshop from "./Workshop";
 import SchoolGroup from "./SchoolGroup";
 import ColorfulText from "./ColorfulText";
 import AboutUs from "./AboutUs";
+import ParrotCard from "./ParrotCard";
 
 const Section = styled.section``;
 
@@ -127,6 +128,13 @@ const NavBar = () => {
               </StyledNavLink>
             </li>
             <li>
+              <StyledNavLink to="/papugarnia">
+                <Text>
+                  <ColorfulText text="Papugarnia" />
+                </Text>
+              </StyledNavLink>
+            </li>
+            <li>
               <StyledNavLink to="/cennik">
                 <Text>
                   <ColorfulText text="Cennik" />
@@ -189,6 +197,9 @@ const NavBar = () => {
         </Route>
         <Route path="/warsztaty">
           <Workshop />
+        </Route>
+        <Route path="/papugarnia">
+          <ParrotCard />
         </Route>
         <Route path="/cennik">home</Route>
         <Route path="/regulamin">home</Route>
