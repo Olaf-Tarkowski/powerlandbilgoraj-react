@@ -2,14 +2,13 @@ import styled from "styled-components";
 import { Fade } from "react-reveal";
 import ColorfulText from "./ColorfulText";
 import { Col, Row } from "styled-bootstrap-grid";
-import Workshop1 from "../resources/images/Workshop/Workshop1.jpg"
-import Workshop2 from "../resources/images/Workshop/Workshop2.png"
-import Workshop3 from "../resources/images/Workshop/Workshop3.jpg"
-import Workshop4 from "../resources/images/Workshop/Workshop4.jpg"
-import Workshop5 from "../resources/images/Workshop/Workshop5.jpg"
-import Workshop6 from "../resources/images/Workshop/Workshop6.png"
-import Workshop7 from "../resources/images/Workshop/Workshop7.jpg"
-
+import Workshop1 from "../resources/images/Workshop/Workshop1.jpg";
+import Workshop2 from "../resources/images/Workshop/Workshop2.png";
+import Workshop3 from "../resources/images/Workshop/Workshop3.jpg";
+import Workshop4 from "../resources/images/Workshop/Workshop4.jpg";
+import Workshop5 from "../resources/images/Workshop/Workshop5.jpg";
+import Workshop6 from "../resources/images/Workshop/Workshop6.png";
+import Workshop7 from "../resources/images/Workshop/Workshop7.jpg";
 
 const TitleText = styled.div`
   margin: auto;
