@@ -12,6 +12,7 @@ import SchoolGroup from "./SchoolGroup";
 import ColorfulText from "./ColorfulText";
 import AboutUs from "./AboutUs";
 import ParrotCard from "./ParrotCard";
+import Regulations from "./Regulations";
 
 const Section = styled.section``;
 
@@ -202,7 +203,9 @@ const NavBar = () => {
           <ParrotCard />
         </Route>
         <Route path="/cennik">home</Route>
-        <Route path="/regulamin">home</Route>
+        <Route path="/regulamin">
+          <Regulations />
+        </Route>
         <Route path="/wyporzyczalnia">
           <Rent />
         </Route>
