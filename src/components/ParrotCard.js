@@ -115,44 +115,44 @@ const ParrotCard = () => {
       </Fade>
 
       <OpeningHoursSection>
-          <FontBorder>
-            <ColorfulText text="JUŻ OTWARTA - ZAPRASZAMY!" />
-          </FontBorder>
-          <Fade collapse when={visible}>
-            <StyledCard>
-              <OpeningHoursCard src={Regulations} />
-            </StyledCard>
-          </Fade>
-          <Button onClick={() => setVisible(!visible)}>
-            {visible === true ? "SCHOWAJ" : "POKAŻ"} REGULAMIN
-          </Button>
-        </OpeningHoursSection>
+        <FontBorder>
+          <ColorfulText text="JUŻ OTWARTA - ZAPRASZAMY!" />
+        </FontBorder>
+        <Fade collapse when={visible}>
+          <StyledCard>
+            <OpeningHoursCard src={Regulations} />
+          </StyledCard>
+        </Fade>
+        <Button onClick={() => setVisible(!visible)}>
+          {visible === true ? "SCHOWAJ" : "POKAŻ"} REGULAMIN
+        </Button>
+      </OpeningHoursSection>
 
       <Container>
         <Fade duration={2000}>
-        <RowCard>
-            <ColCard lg={6}>
+          <RowCard>
+            <ColCard md={6}>
               <CardImg src={Parrot1} />
             </ColCard>
-            <ColCard lg={6}>
+            <ColCard md={6}>
               <CardImg src={Parrot2} />
             </ColCard>
-            <ColCard lg={6}>
+            <ColCard md={6}>
               <CardImg src={Parrot3} />
             </ColCard>
-            <ColCard lg={6}>
+            <ColCard md={6}>
               <CardImg src={Parrot4} />
             </ColCard>
-            <ColCard lg={6}>
+            <ColCard md={6}>
               <CardImg src={Parrot5} />
             </ColCard>
-            <ColCard lg={6}>
+            <ColCard md={6}>
               <CardImg src={Parrot6} />
             </ColCard>
-            <ColCard lg={6}>
+            <ColCard md={6}>
               <CardImg src={Parrot7} />
             </ColCard>
-            <ColCard lg={6}>
+            <ColCard md={6}>
               <CardImg src={Parrot8} />
             </ColCard>
           </RowCard>
