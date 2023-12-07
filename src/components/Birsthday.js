@@ -90,10 +90,10 @@ const Birthday = () => {
       <Main>
         <Fade duration={2000}>
           <RowCard>
-            <ColCard lg={6}>
+            <ColCard md={6}>
               <CardImg src={birthday1} />
             </ColCard>
-            <ColCard lg={6}>
+            <ColCard md={6}>
               <CardImg src={birthday3} />
             </ColCard>
           </RowCard>
@@ -102,12 +102,12 @@ const Birthday = () => {
             INTERNATIONAL INC. ZAREJESTROWANY ZNAK TOWAROWY.
           </Info>
           <RowCard>
-            <ColCard lg={12}>
+            <ColCard md={12}>
               <CardImg src={birthday2} />
             </ColCard>
           </RowCard>
           <RowCard>
-            <ColCard lg={12}>
+            <ColCard md={12}>
               <TextBox>
                 <Title>
                   ORGANIZACJA URODZIN W PARKU ZEWNĘTRZNY POWERLAND BIŁGORAJ
@@ -172,15 +172,15 @@ const Birthday = () => {
             </ColCard>
           </RowCard>
           <RowCard>
-            <ColCard lg={6}>
+            <ColCard md={6}>
               <CardImg src={birthday6} />
             </ColCard>
-            <ColCard lg={6}>
+            <ColCard md={6}>
               <CardImg src={birthday4} />
             </ColCard>
           </RowCard>
           <RowCard>
-            <ColCard lg={12}>
+            <ColCard md={12}>
               <CardImg src={birthday5} />
             </ColCard>
           </RowCard>
