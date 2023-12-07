@@ -42,12 +42,12 @@ const StyledList = styled.ul`
     flex-direction: column;
     justify-content: center;
     gap: 25px;
-    position: absolute;
+    position: fixed;
     top: 0;
+    opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
     left: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
-    background-color: #a7a7a7d4;
-    color: #000000;
-    width: 100%;
+    background-color: #fff;
+    width: 100vw;
     height: 100vh;
     min-height: 100%;
     transition: all 0.4s ease-in-out;
