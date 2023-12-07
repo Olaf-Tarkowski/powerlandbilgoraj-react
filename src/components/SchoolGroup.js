@@ -65,22 +65,22 @@ const SchoolGroup = () => {
       <Container>
         <Fade duration={2000}>
           <RowCard>
-            <ColCard lg={6}>
+            <ColCard md={6}>
               <CardImg src={CardImg1} />
             </ColCard>
-            <ColCard lg={6}>
+            <ColCard md={6}>
               <CardImg src={CardImg2} />
             </ColCard>
-            <ColCard lg={6}>
+            <ColCard md={6}>
               <CardImg src={CardImg3} />
             </ColCard>
-            <ColCard lg={6}>
+            <ColCard md={6}>
               <CardImg src={CardImg4} />
             </ColCard>
-            <ColCard lg={6}>
+            <ColCard md={6}>
               <CardImg src={CardImg5} />
             </ColCard>
-            <ColCard lg={6}>
+            <ColCard md={6}>
               <CardImg src={CardImg6} />
             </ColCard>
           </RowCard>
