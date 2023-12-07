@@ -14,7 +14,10 @@ import AboutUs from "./AboutUs";
 import ParrotCard from "./ParrotCard";
 import Regulations from "./Regulations";
 
-const Section = styled.section``;
+const Section = styled.section`
+  position: relative;
+  z-index: 999;
+`;
 
 const Nav = styled.nav`
   margin: auto;
@@ -28,7 +31,6 @@ const StyledList = styled.ul`
   margin: 0px;
   padding: 0px;
   width: 100%;
-  height: 50px;
   color: black;
   display: flex;
   align-items: center;
@@ -38,22 +40,22 @@ const StyledList = styled.ul`
 
   @media (max-width: 1400px) {
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 10px;
+    justify-content: center;
+    gap: 25px;
     position: absolute;
-    padding: 87px 55px;
     top: 0;
     left: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
-    background-color: transparent;
+    background-color: #a7a7a7d4;
     color: #000000;
     width: 100%;
-    height: 100%;
-    transition: all 0.3s ease-in-out;
+    height: 100vh;
+    min-height: 100%;
+    transition: all 0.4s ease-in-out;
   }
 `;
 
 const StyledNavLink = styled(NavLink)`
-  margin: 0 15px;
+  z-index: 999;
   font-weight: 700;
   font-size: 16px;
   font-weight: 500;
@@ -96,75 +98,81 @@ const NavBar = () => {
     <HashRouter>
       <Section>
         <Nav>
-          <StyledNavLink to="/">
+          <StyledNavLink onClick={() => setIsOpen(false)} to="/">
             <Logo src={logo} />
           </StyledNavLink>
           <StyledList isOpen={isOpen}>
             <li>
-              <StyledNavLink to="/o_nas">
+              <StyledNavLink onClick={() => setIsOpen(false)} to="/o_nas">
                 <Text>
                   <ColorfulText text="O Nas" />
                 </Text>
               </StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/grupy_szkolne">
+              <StyledNavLink
+                onClick={() => setIsOpen(false)}
+                to="/grupy_szkolne"
+              >
                 <Text>
                   <ColorfulText text="Grupy Szkolne" />
                 </Text>
               </StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/urodziny">
+              <StyledNavLink onClick={() => setIsOpen(false)} to="/urodziny">
                 <Text>
                   <ColorfulText text="Urodziny" />
                 </Text>
               </StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/warsztaty">
+              <StyledNavLink onClick={() => setIsOpen(false)} to="/warsztaty">
                 <Text>
                   <ColorfulText text="Warsztaty" />
                 </Text>
               </StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/papugarnia">
+              <StyledNavLink onClick={() => setIsOpen(false)} to="/papugarnia">
                 <Text>
                   <ColorfulText text="Papugarnia" />
                 </Text>
               </StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/cennik">
+              <StyledNavLink onClick={() => setIsOpen(false)} to="/cennik">
                 <Text>
                   <ColorfulText text="Cennik" />
                 </Text>
               </StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/regulamin">
+              <StyledNavLink onClick={() => setIsOpen(false)} to="/regulamin">
                 <Text>
                   <ColorfulText text="Regulamin" />
                 </Text>
               </StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/wyporzyczalnia">
+              <StyledNavLink
+                onClick={() => setIsOpen(false)}
+                to="/wyporzyczalnia"
+              >
                 <Text>
                   <ColorfulText text="Wyporzyczalnia" />
                 </Text>
               </StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/galeria">
+              <StyledNavLink onClick={() => setIsOpen(false)} to="/galeria">
                 <Text>
                   <ColorfulText text="Galeria" />
                 </Text>
               </StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/kontakt">
+              <StyledNavLink onClick={() => setIsOpen(false)} to="/kontakt">
                 <Text>
                   <ColorfulText text="Kontakt" />
                 </Text>
@@ -180,7 +188,7 @@ const NavBar = () => {
               strokeWidth={2}
               rotate={0}
               color={isOpen ? "#000000" : "#000000"}
-              borderRadius={0}
+              borderRadius={9999}
               animationDuration={0.5}
             />
           </HamburgerMenuContainer>
