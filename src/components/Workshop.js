@@ -66,25 +66,25 @@ const Workshop = () => {
       <Container>
         <Fade duration={2000}>
           <RowCard>
-            <ColCard lg={6}>
+            <ColCard md={6}>
               <CardImg src={Workshop1} />
             </ColCard>
-            <ColCard lg={6}>
+            <ColCard md={6}>
               <CardImg src={Workshop2} />
             </ColCard>
-            <ColCard lg={6}>
+            <ColCard md={6}>
               <CardImg src={Workshop3} />
             </ColCard>
-            <ColCard lg={6}>
+            <ColCard md={6}>
               <CardImg src={Workshop4} />
             </ColCard>
-            <ColCard lg={6}>
+            <ColCard md={6}>
               <CardImg src={Workshop5} />
             </ColCard>
-            <ColCard lg={6}>
+            <ColCard md={6}>
               <CardImg src={Workshop6} />
             </ColCard>
-            <ColCard offset={3} lg={6}>
+            <ColCard offset={3} md={6}>
               <CardImg src={Workshop7} />
             </ColCard>
           </RowCard>
